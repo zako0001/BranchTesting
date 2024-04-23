@@ -1,6 +1,6 @@
 public class Dog extends Animal {
 
-    // Animal method
+    // Animal methods
     @Override
     public void makeSound() {
         System.out.println("Woof.");
@@ -9,5 +9,10 @@ public class Dog extends Animal {
     @Override
     public boolean eat(String foodType) {
         return true;
+    }
+
+    @Override
+    public void mood(boolean happy) {
+        System.out.println(happy ? "Logrer." : "Knurrer.");
     }
 }
